@@ -1,5 +1,6 @@
 <?php
 
+// quick way to render a figure tag from an image field
 field::$methods['toFigure'] = function($field, $class='') {
   $image = $field()->toFile();
   if($image) {

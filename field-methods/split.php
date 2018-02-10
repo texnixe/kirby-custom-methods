@@ -1,5 +1,7 @@
 <?php
 
+// wraps the first word of the field in strong tags
+// echo $page->title()->split(); // <strong>Project</strong> Antigone
 field::$methods['split'] = function($field) {
   $string = $field->value();
   $matches = preg_split('/([:!?.])/', $string, 2, PREG_SPLIT_DELIM_CAPTURE);
